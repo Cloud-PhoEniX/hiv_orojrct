@@ -11,7 +11,7 @@ page_bg_img = '''
         }
     </style>
     '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 lr = pickle.load(open('lr.pkl','rb'))
 df = pd.read_csv("hiv_dataset_deployment.csv")
